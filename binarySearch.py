@@ -10,7 +10,7 @@ def binary_search(num, ele):
     last = len(num) - 1
 #    mid = (first + last) // 2
     while first <= last:
-        mid = (first + last) // 2
+        mid = first + ((last - first) // 2)
         if (num[mid] < ele):
             first = mid + 1
         elif (num[mid] > ele):
